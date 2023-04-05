@@ -24,7 +24,7 @@
 -- Final base SQL model
 -- depends_on: {{ ref('actions_ab3') }}
 select
-    ack_time,
+    safe_cast(ack_time as timestamp) as ack_time,
     sub_id,
     created,
     pr_id,
