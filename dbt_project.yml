@@ -16,7 +16,7 @@ macro-paths:
 - macros
 target-path: ../build
 log-path: ../logs
-packages-install-path: ../dbt
+packages-install-path: /dbt
 clean-targets:
 - build
 - dbt_modules
@@ -49,15 +49,15 @@ dispatch:
 vars:
   json_column: _airbyte_data
   models_to_source:
-    actions_ab1: airbyte_test._airbyte_raw_actions
-    actions_ab2: airbyte_test._airbyte_raw_actions
-    actions_ab3: airbyte_test._airbyte_raw_actions
-    actions: airbyte_test._airbyte_raw_actions
-    deal_ab1: airbyte_test._airbyte_raw_deal
-    deal_ab2: airbyte_test._airbyte_raw_deal
-    deal_ab3: airbyte_test._airbyte_raw_deal
-    deal: airbyte_test._airbyte_raw_deal
-    audit_ab1: airbyte_test._airbyte_raw_audit
-    audit_ab2: airbyte_test._airbyte_raw_audit
-    audit_ab3: airbyte_test._airbyte_raw_audit
-    audit: airbyte_test._airbyte_raw_audit
+    struct_check_ab1: airbyte_test._airbyte_raw_struct_check
+    struct_check_ab2: airbyte_test._airbyte_raw_struct_check
+    struct_check_ab3: airbyte_test._airbyte_raw_struct_check
+    struct_check: airbyte_test._airbyte_raw_struct_check
+    struct_check_path_to_ab1: airbyte_test._airbyte_raw_struct_check
+    struct_check_path_to_ab2: airbyte_test._airbyte_raw_struct_check
+    struct_check_path_to_ab3: airbyte_test._airbyte_raw_struct_check
+    struct_check_path_to: airbyte_test._airbyte_raw_struct_check
+    struct_check_sftp_cred_ab1: airbyte_test._airbyte_raw_struct_check
+    struct_check_sftp_cred_ab2: airbyte_test._airbyte_raw_struct_check
+    struct_check_sftp_cred_ab3: airbyte_test._airbyte_raw_struct_check
+    struct_check_sftp_cred: airbyte_test._airbyte_raw_struct_check
